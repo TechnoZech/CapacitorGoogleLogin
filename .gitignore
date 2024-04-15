@@ -10,7 +10,9 @@
 
 # production
 /build
-
+/android
+.env
+/.env
 # misc
 .DS_Store
 .env.local
