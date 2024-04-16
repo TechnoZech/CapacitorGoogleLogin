@@ -29,7 +29,7 @@ function App() {
 		<div className="App">
 			<header className="App-header">
 				<img src={logo} className="App-logo" alt="logo" />
-				<button onClick={signIn}>Sign In Google</button>
+				<button onClick={signIn}>Sign In with Google</button>
 				{user ? <p>{user}</p> : null}
 				{error ? <p>{error.error}</p> : null}
 			</header>
