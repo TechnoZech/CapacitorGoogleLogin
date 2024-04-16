@@ -17,9 +17,4 @@ const config: CapacitorConfig = {
   },
 };
 
-
-// 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
-
-// 426738143380-n76sjua1ilsg3qsdd74c3kio79treh40.apps.googleusercontent.com
-// 426738143380-fqf68i8mmmkqdc5u9ikdt41brtqvkbg0.apps.googleusercontent.com
 export default config;

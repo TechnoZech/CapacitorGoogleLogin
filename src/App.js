@@ -13,13 +13,15 @@ function App() {
 
   
 	const [user, setUser] = useState(null);
+	const [error, setError] = useState(null);
 	const signIn = async () => {
 		try {
 			const user = await GoogleAuth.signIn();
 			console.log(user.email);
 			setUser(user.email);
 		} catch (error) {
-			console.log(error);
+			console.log("error: ", error);
+			setError(error)
 		}
 	};
 
@@ -29,6 +31,7 @@ function App() {
 				<img src={logo} className="App-logo" alt="logo" />
 				<button onClick={signIn}>Sign In with Google</button>
 				{user ? <p>{user}</p> : null}
+				{error ? <p>{error.error}</p> : null}
 			</header>
 		</div>
 	);
